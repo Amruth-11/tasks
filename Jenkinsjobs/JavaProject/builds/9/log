@@ -1,0 +1,37 @@
+Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\JavaProject
+The recommended git tool is: NONE
+using credential Amruth-11
+Cloning the remote Git repository
+Cloning repository https://github.com/Amruth-11/FactorialByjava.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\JavaProject # timeout=10
+Fetching upstream changes from https://github.com/Amruth-11/FactorialByjava.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.0.windows.1'
+using GIT_ASKPASS to set credentials git hub credentials
+ > git.exe fetch --tags --force --progress -- https://github.com/Amruth-11/FactorialByjava.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/Amruth-11/FactorialByjava.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/Branch1^{commit}" # timeout=10
+Checking out Revision d6650f48d47f6a5af64c742af2663bf32aa40ab0 (refs/remotes/origin/Branch1)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d6650f48d47f6a5af64c742af2663bf32aa40ab0 # timeout=10
+Commit message: "Branch for Calculator Application"
+ > git.exe rev-list --no-walk 30d47f266a984c11f9a11a3b8c23e82d0dd4a9d6 # timeout=10
+First time build. Skipping changelog.
+[JavaProject] $ cmd /c call C:\Windows\TEMP\jenkins18112211740414029958.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JavaProject>javac CalculatorApplication.java 
+error: file not found: CalculatorApplication.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JavaProject>java CalculatorApplication 
+Error: Could not find or load main class CalculatorApplication
+Caused by: java.lang.ClassNotFoundException: CalculatorApplication
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JavaProject>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

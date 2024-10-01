@@ -1,0 +1,73 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1436.vfa_244484591f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2214.vb_b_34b_2ea_9b_83"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2214.vb_b_34b_2ea_9b_83">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@332.va_1ee476d8f6d">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.40.0">
+          <spec></spec>
+        </com.cloudbees.jenkins.GitHubPushTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3964.v0767b_4b_a_0b_fa_">
+    <script>pipeline {
+    agent any
+
+    stages {
+        stage(&apos;Checkout&apos;) {
+            steps {
+                // Checkout the code from the Git repository
+                git branch: &apos;master&apos;, url: &apos;https://github.com/Amruth-11/new_webproject.git&apos;
+            }
+        }
+        stage(&apos;Build Docker Image&apos;) {
+            steps {
+                // Build the Docker image
+                script {
+                    docker.build(&quot;amruth11/new_webproject:latest&quot;)
+                }
+            }
+        }
+        stage(&apos;Deploy&apos;) {
+            steps {
+                script {
+                    // Check if the container exists and delete it if it does
+                    def existingContainer = bat(script: &quot;docker ps -q -f name=my-app-container&quot;, returnStdout: true).trim()
+                    if (existingContainer) {
+                        bat &quot;docker stop my-app-container&quot;
+                        bat &quot;docker rm my-app-container&quot;
+                    }
+                    // Run the new container
+                    bat &quot;docker run -d --name my-app-container -p 80:80 new_webproject:latest&quot;
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Clean up
+            cleanWs()
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

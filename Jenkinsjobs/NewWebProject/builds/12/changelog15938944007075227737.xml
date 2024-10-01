@@ -1,0 +1,10 @@
+commit 69f28fc8115f01b723abc7f018409e6ff1129173
+tree b1f496236b7de8be833ff3cb5d70dd2febf02d00
+parent 40697730f9854efa2d1a703eede2b1b376360b5e
+author amruthvardhan.m@khyath.com <amruthvardhan.m@khyath.com> 2024-09-25 10:56:45 +0530
+committer amruthvardhan.m@khyath.com <amruthvardhan.m@khyath.com> 2024-09-25 10:56:45 +0530
+
+    initial commit
+
+
+:100644 100644 42978f241ecde67561c02eb395f5eb318004943c 1030097b19a99d1e10e4f5d6c5c651be4c1482a4 M	Dockerfile

@@ -1,0 +1,29 @@
+Started by upstream project "[8mha:////4DpZxAUgDZ6P2uRbRuCp+PoFFuXIc/shKpUPiL6EMOr6AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP2Aovys1OQSXUN9AJI76gXEAAAA[0mProject-1" build number [8mha:////4EuZAetFWTXr+oOFdvxLMlSCvnKoAedJ8Ra2SIFe3ldPAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgH9rPwk/YCi/KzU5BJdQ30zAF0etE/FAAAA[0m6
+originally caused by:
+ Started by timer
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Project-2
+The recommended git tool is: NONE
+using credential Amruth-11
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Project-2\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/Amruth-11/Amruth2.git # timeout=10
+Fetching upstream changes from https://github.com/Amruth-11/Amruth2.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.0.windows.1'
+using GIT_ASKPASS to set credentials git hub credentials
+ > git.exe fetch --tags --force --progress -- https://github.com/Amruth-11/Amruth2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/Branch2^{commit}" # timeout=10
+Checking out Revision b4e3b51126aa04551521b4378c597167d5fb5cdd (refs/remotes/origin/Branch2)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f b4e3b51126aa04551521b4378c597167d5fb5cdd # timeout=10
+Commit message: "Files of Branch2"
+ > git.exe rev-list --no-walk b4e3b51126aa04551521b4378c597167d5fb5cdd # timeout=10
+[Project-2] $ cmd /c call C:\Windows\TEMP\jenkins3999809362046358158.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Project-2>echo "This is Second Freestyle project that clones Branch2" 
+"This is Second Freestyle project that clones Branch2"
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Project-2>exit 0 
+Triggering a new build of [8mha:////4KQhiX+O6OZRsyRJFP9Z7WKLYpi6NufXQpECrC9ZX5W4AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP2Aovys1OQSXWN9ABBZ3DfEAAAA[0mProject-3 #3
+Finished: SUCCESS

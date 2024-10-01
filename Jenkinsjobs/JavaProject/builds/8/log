@@ -1,0 +1,28 @@
+Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\JavaProjectForFactorial
+The recommended git tool is: NONE
+using credential Amruth-11
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\JavaProjectForFactorial\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/Amruth-11/FactorialByjava.git # timeout=10
+Fetching upstream changes from https://github.com/Amruth-11/FactorialByjava.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.0.windows.1'
+using GIT_ASKPASS to set credentials git hub credentials
+ > git.exe fetch --tags --force --progress -- https://github.com/Amruth-11/FactorialByjava.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/Branch1^{commit}" # timeout=10
+Checking out Revision 30d47f266a984c11f9a11a3b8c23e82d0dd4a9d6 (refs/remotes/origin/Branch1)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 30d47f266a984c11f9a11a3b8c23e82d0dd4a9d6 # timeout=10
+Commit message: "Java program for Calculator"
+ > git.exe rev-list --no-walk 30d47f266a984c11f9a11a3b8c23e82d0dd4a9d6 # timeout=10
+[JavaProjectForFactorial] $ cmd /c call C:\Windows\TEMP\jenkins13230055589571400297.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JavaProjectForFactorial>javac Factorial.java 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JavaProjectForFactorial>java Factorial 
+Factorial of 5 is 120
+
+C:\ProgramData\Jenkins\.jenkins\workspace\JavaProjectForFactorial>exit 0 
+Finished: SUCCESS

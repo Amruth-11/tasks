@@ -1,0 +1,30 @@
+Started by upstream project "[8mha:////4DpZxAUgDZ6P2uRbRuCp+PoFFuXIc/shKpUPiL6EMOr6AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP2Aovys1OQSXUN9AJI76gXEAAAA[0mProject-1" build number [8mha:////4CrYBijpe7trlB09WrWEjwBnAIxOsebhq+p/zMnc8drGAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgH9rPwk/YCi/KzU5BJdQ31jANLq3j/FAAAA[0m3
+originally caused by:
+ Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Project-2
+The recommended git tool is: NONE
+using credential Amruth-11
+Cloning the remote Git repository
+Cloning repository https://github.com/Amruth-11/Amruth2.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\Project-2 # timeout=10
+Fetching upstream changes from https://github.com/Amruth-11/Amruth2.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.0.windows.1'
+using GIT_ASKPASS to set credentials git hub credentials
+ > git.exe fetch --tags --force --progress -- https://github.com/Amruth-11/Amruth2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/Amruth-11/Amruth2.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/Branch2^{commit}" # timeout=10
+Checking out Revision b4e3b51126aa04551521b4378c597167d5fb5cdd (refs/remotes/origin/Branch2)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f b4e3b51126aa04551521b4378c597167d5fb5cdd # timeout=10
+Commit message: "Files of Branch2"
+First time build. Skipping changelog.
+[Project-2] $ cmd /c call C:\Windows\TEMP\jenkins13420020584450086224.bat
+> was unexpected at this time.
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Project-2>echo >>> This is Second Freestyle project that clones Branch2 <<<
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

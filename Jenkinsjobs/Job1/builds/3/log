@@ -1,0 +1,11 @@
+Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Job1
+[Job1] $ cmd /c call C:\Windows\TEMP\jenkins11871805060597090300.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job1>echo Hii 
+Hii
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job1>exit 0 
+Triggering a new build of [8mha:////4DXaM0R/SUUvnLCD1OogUu2tVHsp0bzgVqMm2icF4v1lAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JH2v/CQjfQDglmP3vwAAAA==[0mJob2
+Finished: SUCCESS

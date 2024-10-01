@@ -1,0 +1,12 @@
+Started by upstream project "[8mha:////4AVlS7E81cOBTSCDCBblf7oDgommMKJKjudOn0yEjUUVAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JH2v/CRjfQChp3juvwAAAA==[0mJob3" build number [8mha:////4GndV1DtfyZ1TDt7C5Wk7BHQpF/PsHBHToh+gPOjfqhZAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBm79rPwkfa/8JGN9YwCml89kwAAAAA==[0m3
+originally caused by:
+ Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Job4
+[Job4] $ cmd /c call C:\Windows\TEMP\jenkins17803361014375738101.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job4>echo This is 4th Job 
+This is 4th Job
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job4>exit 0 
+Finished: SUCCESS

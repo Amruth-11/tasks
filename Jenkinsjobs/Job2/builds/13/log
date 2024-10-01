@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4LxzHhNhI+sVh4nVTSHegiWK4r5l2eq/mdkpdtguy48uAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JH2v/CRDfQAjxU7cvwAAAA==[0mJob1" build number [8mha:////4EOTyg+JGcx1QL1xTiybo14o/YHlKHbXuXCt8Diy4tX8AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/az8JH2v/CRDfUMzAP2r7e7BAAAA[0m16
+originally caused by:
+ Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Job2
+[Job2] $ cmd /c call C:\Windows\TEMP\jenkins12585444435234860359.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job2>echo This is Job 2 
+This is Job 2
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job2>exit 0 
+[parameterized-trigger] Downstream builds will not be triggered as no parameter is set.
+Finished: SUCCESS

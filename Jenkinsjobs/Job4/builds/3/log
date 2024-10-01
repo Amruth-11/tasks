@@ -1,0 +1,19 @@
+Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Job4
+[Job4] $ cmd /c call C:\Windows\TEMP\jenkins18147717484010515533.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job4>echo 3 
+3
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job4>echo #3 
+#3
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job4>echo 3 
+3
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job4>echo C:\ProgramData\Jenkins\.jenkins 
+C:\ProgramData\Jenkins\.jenkins
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Job4>exit 0 
+Finished: SUCCESS

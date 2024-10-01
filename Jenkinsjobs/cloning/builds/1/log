@@ -1,0 +1,23 @@
+Started by user [8mha:////4C0+Yocept2VFR1PnyPRkch0vMhxjICsJrBfzaGgpJI7AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY+/dLi1CL9xNyi0pIMQ0MApiw+ZMMAAAA=[0mAmruth Vardhan Moru
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\cloning
+The recommended git tool is: NONE
+using credential Amruth-11
+Cloning the remote Git repository
+Cloning repository https://github.com/sumanthg2904/myjava-application-sep-19.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\cloning # timeout=10
+Fetching upstream changes from https://github.com/sumanthg2904/myjava-application-sep-19.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.0.windows.1'
+using GIT_ASKPASS to set credentials git hub credentials
+ > git.exe fetch --tags --force --progress -- https://github.com/sumanthg2904/myjava-application-sep-19.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sumanthg2904/myjava-application-sep-19.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 992daa64f8f53d9670a8f732f8315007c96d2854 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 992daa64f8f53d9670a8f732f8315007c96d2854 # timeout=10
+Commit message: "initial commit"
+First time build. Skipping changelog.
+Finished: SUCCESS
