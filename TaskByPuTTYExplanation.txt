@@ -1,0 +1,159 @@
+Hello TechLead,
+
+I have tried with the task that you have given on Tuesday i.e 01-10-2024.
+The task is to automatically delete and create an existing container when
+some changes are done in GitHub by using SSH configuration of PuTTY.
+
+I have been trying to complete the task,but in putty after setting the
+SSH configuration and after opening the terminal and tryiing to give my credentials 
+after giving my username, it is showing like " server refused our key ".
+I am working on it since yesterday and I have tried so many resources from the internet.
+But,after trying them also i am getting the same as " server refused our key ".
+
+So,I request you to please give me sometime to work on it.The task you have given
+is as explained below.
+
+EXPLANATION OF THE TASK :
+-----------------------  
+
+1. The applications we need for the task are
+	i.Git
+       ii.Jenkins
+      iii.Docker
+       iv.PuTTY
+2. Make sure we have a particular repository in GitHub to do the task.
+3. We need to install the required plugins(Git plugin, Docker Pipiline plugin, Pipeline plugin)
+   from Jenkins.
+4. PuTTY configuration :
+   ===================
+   -> Goto PuTTYgen to generate the SSH key pair.
+   -> Now select the key type as 'RSA' and set the number of bits in the generated key to '4096'.
+   -> Click on 'Generate',we will get a Private SSH key(.ppk) and Public SSH key.
+   -> Save the private key and copy the public key.
+   -> Now, we have to enter our servers hostname or IP address in Session category.
+   -> On the left side we will find 'Connection', goto Connection,then goto SSh and then select Auth option.
+      We will find a Browse option, in this we have to provide the private SSH key.
+      -->Note :
+         Sometimes we do not find the browse option in Auth, that time we have to press the '+' at Auth,we will
+         find option as 'Credentials'.Click on that then we will find Browse option to give the private SSH key.
+   -> Now save the session and click on open.
+   -> PuTTY terminal will be opened and login to the server using user credentials.
+   -> Now in PuTTY terminal,we need to install Jenkins and Docker by using follwing commands,
+
+       > First we need to update the package index.
+          - sudo apt update
+            sudo apt upgrade -y
+
+       > To install Jenkins,Java JDK needs to be installed mandatorily.
+          - sudo apt install openjdk-21-jdk -y
+
+       > Jenkins installation needs to follow some commands to install through PuTTY as follows,
+          --> Adding the Jenkins key
+               - wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+          --> Add the repository of Jenkins
+               - echo deb http://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+          --> Update the package again and install the Jenkins
+               - sudo apt update
+                 sudo apt install jenkins -y
+          --> Start and enable Jenkins
+               - sudo systemctl start jenkins
+                 sudo systemctl enable jenkins
+          --> For retrieving the initial admin password if necessary use the below command to get initial admin password.
+               - sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+5. ADDING SSH KEY TO GITHUB :
+   ========================
+  -> Goto GitHub account.
+  -> Now go to the settings under profile section.
+  -> We will see an option as SSH and GPG keys and select the option.
+  -> Now click on New SSH key and paste the public SSH key in the key field.
+  -> Give it a title and click on 'Add SSH key'.
+
+6. JENKINS CONFIGURATION :
+   =====================
+   -> Goto Jenkins Dashboard,selct New item,name the job,select pipeline project and click on Ok.
+   -> Now write the pipeline script as below,
+    
+
+      
+    pipeline {
+    agent any
+
+    environment {
+        DOCKER_CREDENTIALS_ID ='amruth11'
+        DOCKER_IMAGE = 'amruth11/automationbyputty:latest'
+        CONTAINER_NAME = 'MyAutomation' 
+        BASE_PORT = 8112
+    }
+
+    stages {
+        stage('Git Cloning') {
+            steps {
+                git credentialsId: 'Amruth-11', url: 'https://github.com/Amruth-11/automationbyputty.git'
+            }
+        }
+
+       stage('Build Docker Image') {
+            steps {
+                script {
+                    docker.build(DOCKER_IMAGE)
+                }
+            }
+        }
+        stage('Push Docker Image') {
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', DOCKER_CREDENTIALS_ID) {
+                        docker.image(DOCKER_IMAGE).push()
+                    }
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+                    // Stop and remove the existing container if it exists
+                    bat """
+                        FOR /F "tokens=*" %%i IN ('docker ps -q -f "name=${CONTAINER_NAME}"') DO (
+                            docker stop %%i  
+                            docker rm -f %%i 
+                        )
+                    """
+
+                    // Check if the base port is available
+                    def port = BASE_PORT
+                    while (true) {
+                        def isPortUsed = bat(script: "netstat -ano | findstr :${port}", returnStatus: true) == 0
+                        if (!isPortUsed) {
+                            break
+                        }
+                        port++
+                    }
+
+                    // Run the new container on the available port
+                    bat "docker run -d --name ${CONTAINER_NAME} -p ${port}:80 ${DOCKER_IMAGE}"
+                    echo "New container deployed on port: ${port}"
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Optionally clean up any dangling images
+            script {
+                bat "docker image prune -f"
+            }
+        }
+    }
+}
+
+  ==> Now we can test the pipeline by using Build Now!
+
+  ==> The complete configuration of SSH using PuTTY and setting up Jenkins with Docker to automate the deployment 
+      pipeline, and to delete and recreate a Docker container when changes are detected in my Git repository.
+
+
+  
+ 
+
