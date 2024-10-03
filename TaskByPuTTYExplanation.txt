@@ -21,7 +21,7 @@ EXPLANATION OF THE TASK :
        ii.Jenkins
       iii.Docker
        iv.PuTTY
-2. Make sure we have a particular repository in GitHub to do the task.
+2. Make sure we have a particular repository in GitHub and added a WebHook to do the task.
 3. We need to install the required plugins(Git plugin, Docker Pipiline plugin, Pipeline plugin)
    from Jenkins.
 4. PuTTY configuration :
