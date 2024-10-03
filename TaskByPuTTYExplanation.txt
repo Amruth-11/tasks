@@ -72,6 +72,8 @@ EXPLANATION OF THE TASK :
 6. JENKINS CONFIGURATION :
    =====================
    -> Goto Jenkins Dashboard,selct New item,name the job,select pipeline project and click on Ok.
+   -> Goto Manage Jenkins > Credentials > Add Credentials > Now in 'Kind' field select "SSH username with private key".
+      Give the necessary credentials and click on Create.
    -> Now write the pipeline script as below,
     
 
